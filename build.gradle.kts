@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     kotlin("jvm") version "1.6.20"
     id("com.github.johnrengelman.shadow") version "7.1.0"
+    id("xyz.jpenilla.run-paper") version "2.0.1"
 }
 
 java {
@@ -39,4 +40,10 @@ tasks.withType<KotlinCompile> {
 
 tasks.build {
     dependsOn(tasks.shadowJar)
+}
+
+tasks {
+    runServer {
+        minecraftVersion("1.18.2")
+    }
 }
