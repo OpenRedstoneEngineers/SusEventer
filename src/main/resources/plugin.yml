@@ -2,4 +2,4 @@ name: CancelTargetInteraction
 version: 1.0
 main: CancelTargetInteraction
 api-version: 1.18
-depend: [PlotSquared]
+depend: []
