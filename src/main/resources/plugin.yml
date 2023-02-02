@@ -1,5 +1,5 @@
-name: CancelTargetInteraction
+name: SusEventer
 version: 1.0
-main: CancelTargetInteraction
+main: SusEventer
 api-version: 1.18
-depend: []
+depend: [PlotSquared, Essentials]

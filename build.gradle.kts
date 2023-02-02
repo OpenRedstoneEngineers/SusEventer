@@ -23,18 +23,28 @@ repositories {
     maven("https://maven.enginehub.org/repo/")
     maven("https://repo.codemc.org/repository/maven-public/")
     maven("https://libraries.minecraft.net")
+    maven("https://repo.essentialsx.net/snapshots/")
 }
 
 dependencies {
     implementation(kotlin("stdlib"))
+    implementation(group = "co.aikar", name = "acf-paper", version = "0.5.1-SNAPSHOT")
     compileOnly(group = "com.plotsquared", name = "PlotSquared-Core", version = "6.4.0")
     compileOnly(group = "com.plotsquared", name = "PlotSquared-Bukkit", version = "6.4.0")
     compileOnly(group = "org.spigotmc", name = "spigot-api", version = "1.18.2-R0.1-SNAPSHOT")
+    compileOnly(group = "net.essentialsx", name = "EssentialsX", version = "2.20.0-SNAPSHOT")
+}
+
+
+tasks.shadowJar {
+    relocate("co.aikar.commands", "SusEventer.acf")
+    relocate("co.aikar.locales", "SusEventer.locales")
 }
 
 tasks.withType<KotlinCompile> {
     kotlinOptions {
         jvmTarget = "16"
+        javaParameters = true
     }
 }
 

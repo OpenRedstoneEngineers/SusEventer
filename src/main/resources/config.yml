@@ -1,0 +1,29 @@
+# SusEventer default configuration
+
+handlers:
+  TargetBlockHit:
+    enabled: true
+    default: plot-trust
+    configurable:
+      desc: "When to allow target block activations."
+      options:
+        - always
+        - never
+        - plot-trust
+  CartPush:
+    enabled: true
+    default: plot-trust
+    configurable:
+      desc: "When to allow minecarts to be pushed."
+      options:
+        - always
+        - never
+        - plot-trust
+        - is-entity
+  TPToggleBypass:
+    enabled: true
+    default: never
+  BoatCollide: # Acts weird. Might be good with client-side companion mod to allow no-clip boating.
+    enabled: false # But for now, disabled by default.
+    default: never
+
