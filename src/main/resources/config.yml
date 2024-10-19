@@ -20,6 +20,7 @@ handlers:
         - never
         - plot-trust
         - is-entity
+        - plot-trust-inclusive
   TPToggleBypass:
     enabled: true
     default: never
