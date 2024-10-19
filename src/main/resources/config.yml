@@ -12,7 +12,7 @@ handlers:
         - plot-trust
   CartPush:
     enabled: true
-    default: plot-trust
+    default: plot-trust-inclusive
     configurable:
       desc: "When to allow minecarts to be pushed."
       options:
