@@ -13,7 +13,7 @@ java {
 }
 
 group = ""
-version = "1.0"
+version = "1.1"
 
 repositories {
     mavenCentral()
@@ -29,8 +29,8 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib"))
     implementation(group = "co.aikar", name = "acf-paper", version = "0.5.1-SNAPSHOT")
-    compileOnly(group = "com.plotsquared", name = "PlotSquared-Core", version = "6.4.0")
-    compileOnly(group = "com.plotsquared", name = "PlotSquared-Bukkit", version = "6.4.0")
+    compileOnly(group = "com.intellectualsites.plotsquared", name = "plotsquared-core", version = "7.3.8")
+    compileOnly(group = "com.intellectualsites.plotsquared", name = "plotsquared-bukkit", version = "7.3.8")
     compileOnly(group = "org.spigotmc", name = "spigot-api", version = "1.18.2-R0.1-SNAPSHOT")
     compileOnly(group = "net.essentialsx", name = "EssentialsX", version = "2.20.0-SNAPSHOT")
 }
