@@ -1,5 +1,5 @@
 name: SusEventer
-version: 1.0
+version: 1.1
 main: SusEventer
 api-version: 1.18
 depend: [PlotSquared, Essentials]

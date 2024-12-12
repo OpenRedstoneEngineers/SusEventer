@@ -38,15 +38,16 @@ For format, see the default `config.yml`.
 |                  |                               |                                                               |             |                |                                           |              |
 
 ### Bypass Conditions
-| Name         | Actor: Player                                    | Actor: Block                           | Actor: Entity | Implemented? |
-|--------------|--------------------------------------------------|----------------------------------------|---------------|--------------|
-| `always`     | Always                                           | Always                                 | Always        | FULLY        |
-| `never`      | Never                                            | Never                                  | Never         | FULLY        |
-| `plot-trust` | Is trusted to the plot where the event occurred. | Is within the same plot as the target. | Never         | FULLY        |
-| `is-player`  | Always                                           | Never                                  | Never         | FULLY        |
-| `is-block`   | Never                                            | Always                                 | Never         | FULLY        |
-| `is-entity`  | Never                                            | Never                                  | Always        | FULLY        |
-|              |                                                  |                                        |               |              |
+| Name                   | Actor: Player                                    | Actor: Block                           | Actor: Entity | Implemented? |
+|------------------------|--------------------------------------------------|----------------------------------------|---------------|--------------|
+| `always`               | Always                                           | Always                                 | Always        | FULLY        |
+| `never`                | Never                                            | Never                                  | Never         | FULLY        |
+| `plot-trust-inclusive` | Is trusted to the plot where the event occurred. | Always                                 | Always        | FULLY        |
+| `plot-trust`           | Is trusted to the plot where the event occurred. | Is within the same plot as the target. | Is Minecart   | FULLY        |
+| `is-player`            | Always                                           | Never                                  | Never         | FULLY        |
+| `is-block`             | Never                                            | Always                                 | Never         | FULLY        |
+| `is-entity`            | Never                                            | Never                                  | Always        | FULLY        |
+|                        |                                                  |                                        |               |              |
 
 ## Development
 ### Note about the `runServer` Gradle task:

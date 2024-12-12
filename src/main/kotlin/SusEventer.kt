@@ -254,6 +254,10 @@ class SusEventer : JavaPlugin(), Listener {
             is Block  -> getPlot(target) == plotAt(actor.location, actor.world)
             else -> false
         }
+        "plot-trust-inclusive" -> fun (actor, target, _) = when (actor) {
+            is Player -> getPlot(target)?.isTrusted(actor.uniqueId) ?: false
+            else -> true
+        }
         "always" -> fun (_,_,_) = true
         "never"  -> fun (_,_,_) = false
         "is-player" -> fun (actor,_,_) = actor is Player
